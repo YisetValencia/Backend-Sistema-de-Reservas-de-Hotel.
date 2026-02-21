@@ -12,8 +12,7 @@ class HabitacionPremium(Habitacion):
         precio_total = self.precio
     
         if self.servicio_yacuzzi:
-            precio_total += 50000
-
-        return precio_total
+            return 50000
+        return 0
     
     """ La clase HabitacionPremium hereda de la clase Habitacion y agrega un atributo adicional para indicar si el servicio de jacuzzi está habilitado. Además, incluye un método para calcular el precio total de la habitación premium, sumando el costo del servicio de jacuzzi si está habilitado. """
